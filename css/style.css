@@ -123,11 +123,17 @@ h2 {
     margin: 8% 0;
 }
 
+.projetos__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .projetos__projeto {
     background: var(--cinza-escuro);
     padding: 2%;
     margin: 4%;
+    width: 95vw;
+    max-width: 800px;
 }
 
 h3 {
