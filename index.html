@@ -1,149 +1,267 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfólio - Carolina Seixas</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#formacao">Formação</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-claro fixed-top px-2">
+            <a class="navbar-brand" href="#top">Portfólio: Carolina Seixas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link menu" aria-current="page" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item dropdown menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projetos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#python">Python</a></li>
+                            <li><a class="dropdown-item" href="#sites">Sites</a></li>
+                            <li><a class="dropdown-item" href="#dados">Análise de dados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="#formacao">Formação</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-secondary" onclick="mudaTema()" aria-label="Alterar tema"><ion-icon name="moon-outline"></ion-icon></button>
         </nav>
     </header>
 
     <main>
-        <section class="apresentacao">
-            <img src="imgs/apresentacao.svg" class="apresentacao__imagem" alt="none"/>
-            <div class="apresentacao__texto">
-                <h1>Carolina de Seixas Couto Leite</h1>
-                <p class="apresentacao__subtitulo">Bióloga molecular em transição de carreira</p>
-                <p class="apresentacao__subtitulo">Aspirante a profissional da área de tecnologia</p>
-                <a class="apresentacao__contato botao" href="mailto:carolxleite@gmail.com">Contato</a>
-            </div>
+        <section class="d-flex flex-column flex-md-row justify-content-lg-center align-items-center p-3" name="top">
+            <img src="imgs/apresentacao.svg" class="apresentacao__imagem py-3 m-5" alt="Ilustração de uma menina no computador" />
+            <article class="d-flex flex-column align-items-center">
+                <h1 class="text-center">Carolina de Seixas Couto Leite</h1>
+                <p class="text-center">Bióloga molecular em transição de carreira</p>
+                <p class="text-center">Aspirante a profissional da área de tecnologia</p>
+                <a class="btn btn-cor-especial mb-3 py-2 px-5" href="mailto:carolxleite@gmail.com">Contato</a>
+            </article>
         </section>
 
         <a name="sobre" aria-label="seção sobre"></a>
-        <section class="sobre">
-            <img src="https://github.com/carolinaseixas.png" class="sobre__foto" alt="Foto de perfil Carolina"/>
-            <div>
+        <section class="d-flex flex-column flex-md-row justify-content-lg-center align-items-center bg-claro">
+            <img src="https://github.com/carolinaseixas.png" class="sobre__foto m-4" alt="Foto de perfil Carolina" />
+            <article class="m-4 article-w">
                 <h2>Sobre Mim</h2>
-                <p>Sou bióloga mestre em genética pela Universidade de São Paulo (USP) e estou em transição de carreira. Atualmente sou estudante de Análise e Desenvolvimento de Sistemas e faço MBA em Gestão de Projetos. Em tecnologia possuo conhecimento básico de Python, HTML, CSS e Power BI e noções de Javascript e Java. Como bióloga possuo vasta experiência na área da saúde. Possuo perfil analítico, muito foco e organização.</p>
-                <a href="https://www.linkedin.com/in/carolina-seixas" class="botao">LinkedIn</a>
-            </div>
+                <p class="text-justify">
+                    Atualmente sou estudante de Análise e Desenvolvimento de Sistemas e faço MBA em Gestão de Projetos. Também sou bióloga mestre em genética pela Universidade de São Paulo (USP) e estou em
+                    transição de carreira. Em tecnologia possuo conhecimento intermediário de Python, básico de HTML, CSS, Git, SQL e Power BI e noções de Javascript e Java. Como bióloga possuo vasta experiência na área da saúde. Possuo perfil analítico, muito foco e
+                    organização.
+                </p>
+                <a href="https://www.linkedin.com/in/carolina-seixas"
+                    class="btn btn-cor-especial py-2 px-5">LinkedIn</a>
+            </article>
         </section>
 
         <a name="projetos" aria-label="seção projetos"></a>
-        <section class="projetos">
+        <section class="mt-5 mx-auto px-4 article-w d-flex flex-column align-items-center">
             <h2>Projetos</h2>
-            <p>Projetos ordenados por categoria. Com relação ao FrontEnd, não sou boa com design (temos que falar nossas dificuldades também, não é?!), mas tento sempre melhorar.</p>
-            
-            <h3>Python</h3>
-            <div class="projetos__cards">
-                <article class="projetos__projeto">
-                    <h3>Bioinformática (básica) - Fasta para tabela (Python)</h3>
-                    <p>Cria uma tabela de sequências genômicas com bases separadas a partir de um arquivo fasta que já possua as sequências previamente alinhadas. Útil principalmente para algumas aplicações de Machine Learning.</p>
-                    <a href="https://github.com/carolinaseixas/bioinfo_fasta_tabela" class="botao botao--projetos">Projeto no GitHub</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Jogo da Forca - Python</h3>
-                    <p>Jogo contra a máquina no qual é definida uma palavra e o usuário tenta acertá-la.</p>
-                    <a href="https://github.com/carolinaseixas/forca_python" class="botao botao--projetos">Projeto no GitHub</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Jogo do mentalista - Python</h3>
-                    <p>Jogo contra a máquina no qual a máquina sorteia um número inteiro de 0 a 10, o usuário dá um palpite sobre qual é o número, se errar ganha uma dica e tem mais 2 chances para acertar.</p>
-                    <a href="https://github.com/carolinaseixas/mentalista_python" class="botao botao--projetos">Projeto no GitHub</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Jogo do par ou ímpar - Python</h3>
-                    <p>Jogo contra a máquina no qual a máquina sorteia um número, o usuário escolhe par ou ímpar e descobre se acertou</p>
-                    <a href="https://github.com/carolinaseixas/par_impar_python" class="botao botao--projetos">Projeto no GitHub</a>
-                </article>
+            <p>Projetos ordenados por categoria. Com relação ao FrontEnd, não sou boa com design (temos que falar nossas
+                dificuldades também, não é?!), mas tento sempre melhorar.</p>
+
+            <h3 class="mt-5" id="python">Python</h3>
+            <div class="container">
+                <div class="row justify-content-md-around justify-content-center">
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Bioinformática (básica) - Fasta para tabela (Python)</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Cria uma tabela de sequências genômicas com
+                            bases
+                            separadas a partir de um
+                            arquivo fasta que já
+                            possua as sequências previamente alinhadas. Útil principalmente para algumas aplicações de
+                            Machine Learning. Manipulação de dados realizada com Pandas.
+                        </p>
+                        <a href="https://github.com/carolinaseixas/bioinfo_fasta_tabela"
+                            class="btn btn-cor-especial">Projeto no
+                            GitHub
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Jogo da Forca - Python</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual é definida
+                            uma palavra e
+                            o usuário tenta
+                            acertá-la.</p>
+                        <a href="https://github.com/carolinaseixas/forca_python" class="btn btn-cor-especial">Projeto no
+                            GitHub
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Jogo do mentalista - Python</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual a máquina
+                            sorteia um
+                            número inteiro de 0 a
+                            10, o usuário dá um
+                            palpite sobre qual é o número, se errar ganha uma dica e tem mais 2 chances para acertar.
+                        </p>
+                        <a href="https://github.com/carolinaseixas/mentalista_python"
+                            class="btn btn-cor-especial">Projeto
+                            no GitHub
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Jogo do par ou ímpar - Python</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual a máquina
+                            sorteia um
+                            número, o usuário
+                            escolhe par ou ímpar e
+                            descobre se acertou
+                        </p>
+                        <a href="https://github.com/carolinaseixas/par_impar_python"
+                            class="btn btn-cor-especial">Projeto
+                            no GitHub
+                        </a>
+                    </article>
+                </div>
             </div>
 
-            <h3>Sites (majoritariamente HTML e CSS)</h3>
-            <div class="projetos__cards">
-                <article class="projetos__projeto">
-                    <h3>Espaço Artístico Águas</h3>
-                    <p>Página criada com material do Espaço Artístico Águas.<br>Instagram: @espacoartisticoaguas</p>
-                    <a href="https://github.com/carolinaseixas/site_aguas" class="botao botao--projetos">Projeto no GitHub</a>
-                    <a href="https://carolinaseixas.github.io/site_aguas/" class="botao botao--projetos">Página Web</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Portfólio</h3>
-                    <p>Esta página. Criada com inspiração no design de outro portfólio, mas com código inteiramente escrito por mim.</p>
-                    <a href="https://github.com/carolinaseixas/portfolio" class="botao botao--projetos">Projeto no GitHub</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Barbearia Alura</h3>
-                    <p>Segunda página criada, com um pouco mais de conhecimento de FrontEnd. Projeto inspirado por um curso da Alura, mas com modificações pessoais para melhorar a apresentação.</p>
-                    <a href="https://github.com/carolinaseixas/barbearia_alura" class="botao botao--projetos">Projeto no GitHub</a>
-                    <a href="https://carolinaseixas.github.io/barbearia_alura/" class="botao botao--projetos">Página Web</a>
-                </article>
-                <article class="projetos__projeto">
-                    <h3>Desafio FCamara e Imersão_Dev</h3>
-                    <p>Primeira página criada, quase sem conhecimento de FrontEnd. Landing Page para convidar os colaboradores da FCamara a retornarem ao escritório com dia e local agendado. Tags de HTML e design melhorados após ter um pouco mais de conhecimento.</p>
-                    <a href="https://github.com/carolinaseixas/fcamara_imersaodev" class="botao botao--projetos">Projeto no GitHub</a>
-                    <a href="https://carolinaseixas.github.io/fcamara_imersaodev/" class="botao botao--projetos">Página Web</a>
-                </article>
+
+            <h3 class="mt-5" id="sites">Sites</h3>
+            <div class="container">
+                <div class="row justify-content-md-around justify-content-center">
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Hackathon Decola (10ª edição) - Iteris</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Single Page Application (SPA) desenvolvida com Vue.js para a 10ª edição do Hackathon Decola promovido pela Iteris. Desafio desenvolvido em colaboração com mais cinco participantes.</p>
+                        <a href="https://github.com/Loordbz/projeto-hackthon" class="btn btn-cor-especial mb-2">Projeto no GitHub</a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Espaço Artístico Águas</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Página criada com material do Espaço
+                            Artístico
+                            Águas.<br>Instagram: @espacoartisticoaguas</p>
+                        <a href="https://github.com/carolinaseixas/site_aguas" class="btn btn-cor-especial mb-2">Projeto
+                            no
+                            GitHub
+                        </a>
+                        <a href="https://carolinaseixas.github.io/site_aguas/" class="btn btn-cor-especial">Página
+                            Web</a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Portfólio</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Esta página. Criada com inspiração no
+                            design de outro portfólio,
+                            mas com código inteiramente
+                            escrito por mim. Na última atualização foi acrescentada estilização com Bootstrap5.
+                        </p>
+                        <a href="https://github.com/carolinaseixas/portfolio" class="btn btn-cor-especial">Projeto no
+                            GitHub
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Barbearia Alura</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Segunda página criada, com um pouco mais de
+                            conhecimento de
+                            FrontEnd. Projeto inspirado por um
+                            curso da Alura, mas com modificações pessoais para melhorar a apresentação.</p>
+                        <a href="https://github.com/carolinaseixas/barbearia_alura"
+                            class="btn btn-cor-especial mb-2">Projeto no
+                            GitHub
+                        </a>
+                        <a href="https://carolinaseixas.github.io/barbearia_alura/" class="btn btn-cor-especial">Página
+                            Web
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
+                        <h4 class="card-title">Desafio FCamara e Imersão_Dev</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Primeira página criada, quase sem
+                            conhecimento de FrontEnd.
+                            Landing Page para convidar os
+                            colaboradores da FCamara a retornarem ao escritório com dia e local agendado. Tags de HTML e
+                            design melhorados após ter um pouco mais de conhecimento.
+                        </p>
+                        <a href="https://github.com/carolinaseixas/fcamara_imersaodev"
+                            class="btn btn-cor-especial mb-2">Projeto
+                            no GitHub
+                        </a>
+                        <a href="https://carolinaseixas.github.io/fcamara_imersaodev/"
+                            class="btn btn-cor-especial">Página
+                            Web
+                        </a>
+                    </article>
+                </div>
             </div>
 
-            <h3>Análise de dados</h3>
-            <div class="projetos__cards">
-                <article class="projetos__projeto">
-                    <h3>Dashboard de desempenho - Power BI</h3>
-                    <p>Dashboard desenvolvido com Power BI analisando o desempenho de estudantes dos Estados Unidos em provas de Leitura e Matemática. Dataset disponível no Kaggle. Disponibilizei somente imagem e arquivo em vez de publicar na web porque a conta da Microsoft é paga.</p>
-                    <a href="https://github.com/carolinaseixas/dashboard_desempenho" class="botao botao--projetos">Projeto no GitHub</a>
-                    <a href="imgs/dashboard_desempenho.jpg" class="botao botao--projetos">Imagem do dashboard</a>
-                </article>
+            <h3 class="mt-5" id="dados">Análise de dados</h3>
+            <div class="container">
+                <div class="row justify-content-md-around justify-content-center card-w">
+                    <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body">
+                        <h4 class="card-title">Dashboard de desempenho - Power BI</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">Dashboard desenvolvido com Power BI
+                            analisando o desempenho de
+                            estudantes dos Estados Unidos em
+                            provas de Leitura e Matemática. Dataset disponível no Kaggle. Disponibilizei somente imagem
+                            e
+                            arquivo em vez de publicar na web porque a conta da Microsoft é paga.
+                        </p>
+                        <a href="https://github.com/carolinaseixas/dashboard_desempenho"
+                            class="btn btn-cor-especial mb-2">Projeto no GitHub
+                        </a>
+                        <a href="imgs/dashboard_desempenho.jpg" class="btn btn-cor-especial">Imagem do dashboard</a>
+                    </article>
+                </div>
             </div>
 
-            <img src="imgs/projetos.svg" alt="none" class="projetos__imagem"/>
+            <img src="imgs/projetos.svg" alt="none" class="projetos__imagem mt-5 m-auto d-block img-fluid" />
         </section>
 
         <a name="conhecimentos" aria-label="seção conhecimentos"></a>
-        <section class="conhecimentos">
-            <h2>Conhecimentos</h2>
-            <p>Em tecnologia possuo conhecimento básico de Python, HTML, CSS e Power BI e noções de Javascript e Java. Como bióloga possuo vasta experiência na área da saúde.</p>
-            <div class="conhecimentos__logos">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Logo Python"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Logo HTML 5"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Logo CSS 3"/>
+        <section class="mt-5 p-4 bg-claro">
+            <h2 class="article-w mx-auto">Conhecimentos</h2>
+            <p class="article-w mx-auto">Em tecnologia possuo conhecimento intermediário de Python, básico de HTML, CSS, Git, SQL e Power BI e noções de Javascript e Java.
+                Como bióloga possuo vasta experiência na área da saúde.
+            </p>
+            <div class="conhecimentos__logos d-flex justify-content-evenly article-w mx-auto flex-wrap">
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Logo Python"/>
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" alt="Logo da biblioteca Pandas"/>
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Logo HTML 5"/>
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Logo CSS 3"/>
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Logo Bootstrap"/>
+                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Logo Git"/>
             </div>
         </section>
 
         <a name="formacao" aria-label="seção formacao"></a>
-        <section class="formacao">
-            <h2>Formação</h2>
-            <div class="formacao__parte1">
+        <section class="my-5 px-4">
+            <h2 class="mb-4 text-center">Formação</h2>
+            <div class="bg-claro mb-5 py-3 px-4 max-w m-auto">
                 <article>
-                    <h3 class="formacao__nome">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+                    <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
                     <p>Universidade Cruzeiro do Sul<br>
                         Previsão de conclusão: outubro de 2023</p>
                 </article>
                 <article>
-                    <h3 class="formacao__nome">MBA em Gestão de Projetos</h3>
+                    <h4>MBA em Gestão de Projetos</h4>
                     <p>Universidade de São Paulo (USP)<br>
                         Previsão de conclusão: abril de 2023</p>
                 </article>
             </div>
 
-            <div class="formacao__parte2">
+            <div class="bg-claro px-4 py-3 max-w m-auto">
                 <article>
-                    <h3 class="formacao__nome">Mestrado em Biologia - Genética</h3>
+                    <h4>Mestrado em Biologia - Genética</h4>
                     <p>Universidade de São Paulo (USP)<br>
                         Conclusão: março de 2018</p>
                 </article>
                 <article>
-                    <h3 class="formacao__nome">Graduação em Ciências Biológicas</h3>
+                    <h4>Graduação em Ciências Biológicas</h4>
                     <p>Universidade de São Paulo (USP)<br>
                         Conclusão: setembro de 2015</p>
                 </article>
@@ -151,9 +269,29 @@
         </section>
     </main>
 
-    <footer>
-        <a href="https://www.linkedin.com/in/carolina-seixas" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="Logo do LinkedIn"/></a>
-        <a href="https://github.com/carolinaseixas" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Logo do GitHub"/></a>
+    <footer class="d-flex justify-content-evenly py-3">
+        <a href="https://www.linkedin.com/in/carolina-seixas" aria-label="LinkedIn"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" class="footer-logo"
+                alt="Logo do LinkedIn" /></a>
+        <a href="https://github.com/carolinaseixas" aria-label="GitHub"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="footer-logo"
+                alt="Logo do GitHub" /></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+    <script src="index.js"></script>
+    <script>
+        function mudaTema() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
