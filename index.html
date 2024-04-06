@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link menu" aria-current="page" href="#sobre">Sobre Mim</a>
+                        <a class="nav-link menu" aria-current="page" href="#sobre">Sobre mim</a>
                     </li>
                     <li class="nav-item dropdown menu">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -30,7 +30,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#python">Python</a></li>
                             <li><a class="dropdown-item" href="#sites">Sites</a></li>
-                            <li><a class="dropdown-item" href="#dados">Análise de dados</a></li>
+                            <!-- <li><a class="dropdown-item" href="#dados">Análise de dados</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item menu">
@@ -50,8 +50,7 @@
             <img src="imgs/apresentacao.svg" class="apresentacao__imagem py-3 m-5" alt="Ilustração de uma menina no computador" />
             <article class="d-flex flex-column align-items-center">
                 <h1 class="text-center">Carolina de Seixas Couto Leite</h1>
-                <p class="text-center">Bióloga molecular em transição de carreira</p>
-                <p class="text-center">Aspirante a profissional da área de tecnologia</p>
+                <p class="text-center">Bióloga molecular que migrou para a área de tecnologia.</p>
                 <a class="btn btn-cor-especial mb-3 py-2 px-5" href="mailto:carolxleite@gmail.com">Contato</a>
             </article>
         </section>
@@ -60,11 +59,11 @@
         <section class="d-flex flex-column flex-md-row justify-content-lg-center align-items-center bg-claro">
             <img src="https://github.com/carolinaseixas.png" class="sobre__foto m-4" alt="Foto de perfil Carolina" />
             <article class="m-4 article-w">
-                <h2>Sobre Mim</h2>
+                <h2>Sobre mim</h2>
                 <p class="text-justify">
-                    Atualmente sou estudante de Análise e Desenvolvimento de Sistemas e faço MBA em Gestão de Projetos. Também sou bióloga mestre em genética pela Universidade de São Paulo (USP) e estou em
-                    transição de carreira. Em tecnologia possuo conhecimento intermediário de Python, básico de HTML, CSS, Git, SQL e Power BI e noções de Javascript e Java. Como bióloga possuo vasta experiência na área da saúde. Possuo perfil analítico, muito foco e
-                    organização.
+                    Atualmente sou Product Owner (PO), mas já trabalhei como desenvolvedora full stack e gosto muito da área. 
+                    Também sou bióloga mestre em genética pela Universidade de São Paulo (USP) e já trabalhei como analista
+                    de laboratório.
                 </p>
                 <a href="https://www.linkedin.com/in/carolina-seixas"
                     class="btn btn-cor-especial py-2 px-5">LinkedIn</a>
@@ -72,16 +71,14 @@
         </section>
 
         <a name="projetos" aria-label="seção projetos"></a>
-        <section class="mt-5 mx-auto px-4 article-w d-flex flex-column align-items-center">
-            <h2>Projetos</h2>
-            <p>Projetos ordenados por categoria. Com relação ao FrontEnd, não sou boa com design (temos que falar nossas
-                dificuldades também, não é?!), mas tento sempre melhorar.</p>
+        <section class="mt-5 mx-auto px-4 article-w d-flex flex-column">
+            <h2 class="text-center">Projetos</h2>
 
             <h3 class="mt-5" id="python">Python</h3>
             <div class="container">
                 <div class="row justify-content-md-around justify-content-center">
                     <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
-                        <h4 class="card-title">Bioinformática (básica) - Fasta para tabela (Python)</h4>
+                        <h4 class="card-title">Bioinformática (básica) - Fasta para tabela</h4>
                         <p class="card-text text-justify d-flex flex-grow-1">Cria uma tabela de sequências genômicas com
                             bases
                             separadas a partir de um
@@ -95,7 +92,7 @@
                         </a>
                     </article>
                     <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
-                        <h4 class="card-title">Jogo da Forca - Python</h4>
+                        <h4 class="card-title">Jogo da forca</h4>
                         <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual é definida
                             uma palavra e
                             o usuário tenta
@@ -105,7 +102,7 @@
                         </a>
                     </article>
                     <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
-                        <h4 class="card-title">Jogo do mentalista - Python</h4>
+                        <h4 class="card-title">Jogo do mentalista</h4>
                         <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual a máquina
                             sorteia um
                             número inteiro de 0 a
@@ -118,7 +115,7 @@
                         </a>
                     </article>
                     <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body card-w">
-                        <h4 class="card-title">Jogo do par ou ímpar - Python</h4>
+                        <h4 class="card-title">Jogo do par ou ímpar</h4>
                         <p class="card-text text-justify d-flex flex-grow-1">Jogo contra a máquina no qual a máquina
                             sorteia um
                             número, o usuário
@@ -199,25 +196,21 @@
                 </div>
             </div>
 
-            <h3 class="mt-5" id="dados">Análise de dados</h3>
+            <!-- <h3 class="mt-5" id="dados">Análise de dados</h3>
             <div class="container">
                 <div class="row justify-content-md-around justify-content-center card-w">
                     <article class="col-12 col-md-5 col-lg-4 card my-3 mx-2 bg-claro card-body">
-                        <h4 class="card-title">Dashboard de desempenho - Power BI</h4>
-                        <p class="card-text text-justify d-flex flex-grow-1">Dashboard desenvolvido com Power BI
-                            analisando o desempenho de
-                            estudantes dos Estados Unidos em
-                            provas de Leitura e Matemática. Dataset disponível no Kaggle. Disponibilizei somente imagem
-                            e
-                            arquivo em vez de publicar na web porque a conta da Microsoft é paga.
+                        <h4 class="card-title">Nome do que foi desenvolvido</h4>
+                        <p class="card-text text-justify d-flex flex-grow-1">
+                            Comentário sobre o que foi desenvolvido
                         </p>
-                        <a href="https://github.com/carolinaseixas/dashboard_desempenho"
+                        <a href="#"
                             class="btn btn-cor-especial mb-2">Projeto no GitHub
                         </a>
-                        <a href="imgs/dashboard_desempenho.jpg" class="btn btn-cor-especial">Imagem do dashboard</a>
+                        <a href="#" class="btn btn-cor-especial">Imagem do dashboard</a>
                     </article>
                 </div>
-            </div>
+            </div> -->
 
             <img src="imgs/projetos.svg" alt="none" class="projetos__imagem mt-5 m-auto d-block img-fluid" />
         </section>
@@ -225,7 +218,9 @@
         <a name="conhecimentos" aria-label="seção conhecimentos"></a>
         <section class="mt-5 p-4 bg-claro">
             <h2 class="article-w mx-auto">Conhecimentos</h2>
-            <p class="article-w mx-auto">Em tecnologia possuo conhecimento intermediário de Python, básico de HTML, CSS, Git, SQL e Power BI e noções de Javascript e Java.
+            <p class="article-w mx-auto">
+                Em tecnologia possuo conhecimento intermediário de Python, HTML e CSS e 
+                básico de Django, Angular, Javascript, Typescript, Git e SQL.
                 Como bióloga possuo vasta experiência na área da saúde.
             </p>
             <div class="conhecimentos__logos d-flex justify-content-evenly article-w mx-auto flex-wrap">
@@ -233,7 +228,6 @@
                 <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" alt="Logo da biblioteca Pandas"/>
                 <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="Logo HTML 5"/>
                 <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="Logo CSS 3"/>
-                <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Logo Bootstrap"/>
                 <img class="p-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Logo Git"/>
             </div>
         </section>
@@ -243,14 +237,19 @@
             <h2 class="mb-4 text-center">Formação</h2>
             <div class="bg-claro mb-5 py-3 px-4 max-w m-auto">
                 <article>
+                    <h4>Especialização em Analytics e Business Intelligence</h4>
+                    <p>Pontifícia Universidade Católica (PUC)<br>
+                        Previsão de conclusão: setembro de 2025</p>
+                </article>
+                <article>
                     <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
                     <p>Universidade Cruzeiro do Sul<br>
-                        Previsão de conclusão: outubro de 2023</p>
+                        Conclusão: dezembro de 2023</p>
                 </article>
                 <article>
                     <h4>MBA em Gestão de Projetos</h4>
                     <p>Universidade de São Paulo (USP)<br>
-                        Previsão de conclusão: abril de 2023</p>
+                        Conclusão: junho de 2023</p>
                 </article>
             </div>
 
