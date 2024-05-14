@@ -5,11 +5,16 @@
     --cinza-claro: #f0f0f0;
     --roxo: #6c63ff;
     --roxo-escuro: #3f3a99;
+    --azul-vars: #394c8e;
     --fonte: 'Montserrat', sans-serif;
     --cinza-claro-transparente: rgba(227, 227, 227, 0.5)
 }
 
-.bg-claro{
+.general-width {
+    width: clamp(300px, 80%, 1200px);
+}
+
+.bg-claro {
     background-color: var(--cinza-claro);
 }
 
@@ -32,6 +37,15 @@
 .btn-cor-especial {
     background-color: var(--roxo);
     color: var(--branco);
+}
+
+.bg-case {
+    background-color: var(--azul-vars);
+    color: var(--branco);
+}
+
+.foto-case-vars {
+    width: clamp(375px, 40%, 50%);
 }
 
 .article-w {
